@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+
+:root {
+    --color-main: white;
+    --color-gray800: #424551;
+    --color-gray900: #1E212C;
+    --color-primary: #FF5A30;
+    --font-size-normal: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-lead: 2rem;
+    --font-size-h3: 2.8rem;
+    --font-size-header: 7.2rem;
+    --line-height-normal: 160%;
+    --line-height-large: 150%;
+    --line-height-header: 130%;
+    --font-weight-bold: 700;
+    --border-normal: 0.1rem var(--color-main) solid;
+    font-size: 62.5%;
+}
+
+/* <======================== Стилизация по-умолчанию ========================> */
+* {
+    padding: 0;
+    margin: 0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: var(--font-size-normal);
+    line-height: var(--line-height-normal);
+    color: var(--color-gray800);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a {
+    color: var(--color-gray800);
+    text-decoration: none;
+}
+
+h3 {
+    font-size: var(--font-size-h3);
+}
+
+button {
+    background-color: var(--color-primary);
+    border: none;
+    font-size: var(--font-size-normal);
+    text-transform: uppercase;
+    border-radius: 0.4rem;
+    height: 5.2rem;
+    text-align: center;
+    font-weight: var(--font-weight-bold);
+    color: var(--color-main)
+}
+/* <======================== Конец стилизации по-умолчанию ========================> */
+
+/* <======================== Общее ========================> */
+
+/* <======================== Конец общего ========================> */
+
+/* <======================== Шапка ========================> */
+header {
+    display: flex;
+    background-color: var(--color-main);
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 auto;
+    height: 9.2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.header__nav {
+    margin-left: 6rem;
+}
+.logo {
+    height: 2.2rem;
+    margin-left: auto;
+}
+.header__ul {
+    height: 5.8rem;
+    display: flex;
+    align-items: center;
+    font-weight: var(--font-weight-bold);
+    column-gap: 4rem;
+    margin-right: auto;
+    list-style-type: none;
+}
+.header__ul a {
+    font-weight: var(--font-weight-bold);
+    white-space: nowrap;
+}
+.header__contact {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    margin-left: 3.6rem;
+}
+.header__contact p {
+    white-space: nowrap;
+}
+.header__contact p:first-child {
+    font-weight: var(--font-weight-bold);
+}
+.header__contact > div > p:last-child {
+    font-size: var(--font-size-large);
+    line-height: var(--line-height-large);
+}
+.header__contact:last-child {
+    margin-right: auto;
+}
+
+/* <======================== Конец шапки ========================> */
+
+/* <======================== Секция 1 ========================> */
+.section_1 {
+    padding: 31rem 99.8rem 12rem 34.5rem;
+    background-image: url(../img/back/bg-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -30rem 10rem; 
+    font-size: var(--font-size-lead);
+    position: relative;
+}
+.section_1__text {
+    width: 59.5rem;
+}
+.section_1__createx {
+    display: flex;
+}
+.section_1__header {
+    font-size: var(--font-size-header);
+    text-transform: uppercase;
+    line-height: var(--line-height-header);
+    color: var(--color-main)
+}
+.letter_x {
+    color: var(--color-primary);
+    position: absolute;
+    left: 60.5rem;
+    top: 31rem;
+}
+.section_1__desc {
+    margin-top: 2.4rem;
+    color: var(--color-main);
+    line-height: var(--line-height-large);
+}
+.section_1__buttons {
+    margin-top: 6.1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 52.6rem;
+    
+}
+.button_learn_more {
+    width: 27.8rem;
+    background: none;
+    border: var(--border-normal);
+}
+.submit_request {
+    width: 22.4rem;
+}
+.section_1__points {
+    margin-top: 18.1rem;
+    display: flex;
+    column-gap: 0.4rem;
+    width: 72.4rem;
+    color: var(--color-main);
+}
+.section_1__points > h3 {
+    opacity: 60%;
+    height: 5.4rem;
+    width: 17.8rem;
+    border-bottom: 0.2rem var(--color-main) solid;
+    /* border
+    text-decoration: underline;
+    text-underline-offset: 1.2rem;
+    text-decoration-thickness: 0.2rem; */
+}
+.section_1__points > h3:first-child {
+    opacity: 100%;
+}
+.section_1__arrow {
+    background: none;
+    background-image: url(../img/icons/prev-btn.svg);
+    background-repeat: no-repeat;
+    width: 4.8rem;
+}
+.section_1__arrow:hover {
+    background-image: url(../img/icons/prev-btn-hover.png);
+    background-repeat: no-repeat;
+}
+.arrow_back {
+    position: absolute;
+    left: 3.2rem;
+    top: 54.2rem;
+}
+.arrow_next {
+    position: absolute;
+    right: 3.2rem;
+    top: 54.2rem;
+    transform: rotate(180deg);
+}
+
+/* <======================== Конец секции 1 ========================> */
+
+
